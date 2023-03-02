@@ -1,0 +1,37 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1>REGISTRO</h1>
+<form class="row g-3">
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Nombres</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Apellidos</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">Telefono</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">Sexo</label>
+      <select id="inputState" class="form-select">
+        <option selected></option>
+        <option>Masculino</option>
+          <option>Femenino</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Codigo</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-15">
+      <button type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+  </form>
+
+
+{% endblock %}
